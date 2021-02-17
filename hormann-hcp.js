@@ -17,7 +17,7 @@ const portOptions = {
     stopBits: 1,
 }
 console.log('Setting up port...');
-const port = new SerialPort('/dev/ttyUSB0', {
+const port = new SerialPort('/dev/serial1', {
     autoOpen: false,
     highWaterMark: 1, // Necessary for the parser to process messages byte at a time
     ...portOptions
